@@ -1,3 +1,21 @@
+/*
+---
+description: This plugin tries to retrieve photos from any user Flickr using YQL and executing JavaScript in Open Data Table.
+
+authors:
+- Adrian Statescu (http://thinkphp.ro)
+
+license:
+- MIT-style license
+
+requires:
+ core/1.3: '*'
+ more/1.2.4.4: Request.JSONP
+
+provides: [Request.Flickr]
+...
+*/
+
 Request.Flickr = new Class({
            Extends: Request.JSONP,
            options: {
