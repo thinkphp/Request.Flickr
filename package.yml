@@ -1,0 +1,7 @@
+name: Request.Flickr
+author: thinkphp
+current: v1.0
+category: request
+tags: [jsonp,request,interface,flickr,photos,badge,widgets]
+docs: http://github.com/thinkphp/Request.Flickr/blob/master/Docs/Request.Flickr.md
+demo: http://thinkphp.github.com/Request.Flickr
