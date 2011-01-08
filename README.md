@@ -52,4 +52,12 @@ In your HTML.
 
 You can view in action:
 
-- []()
+- [http://thinkphp.github.com/Request.Flickr/Element.loadFlickrPhotos.html](http://thinkphp.github.com/Request.Flickr/Element.loadFlickrPhotos.html)
+- [http://thinkphp.github.com/Request.Flickr/Element.toFlickr.html](http://thinkphp.github.com/Request.Flickr/Element.toFlickr.html)
+- [http://thinkphp.github.com/Request.Flickr/Request.Flickr.basic.html](http://thinkphp.github.com/Request.Flickr/Request.Flickr.basic.html)
+- [http://thinkphp.github.com/Request.Flickr/Request.Flickr.form.html](http://thinkphp.github.com/Request.Flickr/Request.Flickr.form.html)
+- [http://thinkphp.github.com/Request.Flickr/Request.Flickr.html](http://thinkphp.github.com/Request.Flickr/Request.Flickr.html)
+- [http://thinkphp.github.com/Request.Flickr/myElem.loadFlickrPhotos.html](http://thinkphp.github.com/Request.Flickr/myElem.loadFlickrPhotos.html)
+- [http://thinkphp.github.com/Request.Flickr/myElem.toFlickr.html](http://thinkphp.github.com/Request.Flickr/myElem.toFlickr.html)
+- [http://thinkphp.github.com/Request.Flickr/getter-setter.html](http://thinkphp.github.com/Request.Flickr/getter-setter.html)
+
