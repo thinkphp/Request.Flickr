@@ -127,14 +127,14 @@ Updates the content of an Element with the desired photos badge.
 Object: Element.Properties (#Element-Properties)
 ================================================
 
-see: [Element.Properties](https://github.com/core/Element/Element/#Element-Properties)
+see: [Element.Properties](https://github.com/mootools/mootools-core/blob/master/Docs/Element/Element.md#Element-Properties)
 
 Element Property: flickr {#Element-Properties: flickr}
 ------------------------------------------------------
 
 ### Setter
 
-Sets..
+Sets a default Request.Flickr instance for an Element.
 
 ### Syntax:
 
@@ -151,11 +151,7 @@ Sets..
 
 #### Example:
 
-$('badge').set('flickr',{username: 'ydn', 
-                         amount: 20, 
-                         size: 's', 
-                         tags: 'hackathon'
-                         });
+$('badge').set('flickr',{username: 'ydn', amount: 20, size: 's', tags: 'hackathon'});
 
 ### Getter
 
