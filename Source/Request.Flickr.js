@@ -38,7 +38,7 @@ Request.Flickr = new Class({
 Element.implement({
         toFlickr: function(o){
              var that = this;
-             new Request.Flickr(o,{
+             new Request.Flickr(o, {
                          onSuccess: function(o) {
                               if(window.console){console.log(o);}
                               that.set('html',o.results[0]);
@@ -53,23 +53,25 @@ Element.implement({
 
 Element.Properties.flickr = {
         set: function(o,options) {
-              var flickr = this.get('flickr',o);
-              var that = this;
-              var options = $merge({onSuccess: function(o) {
+              this.store('param',o);
+              var flickr = this.get('flickr'),
+                  that = this,
+                  options = Object.merge({onSuccess: function(o) {
                                           if(window.console){console.log(o);}
                                           that.set('html',o.results[0]);
-                                    },
-                                    onRequest: function(script) {
-                                          if(window.console){console.log(script);}
-                                          new Element('span',{'class': 'loading'}).set('text','Loading...').inject(that);
-                                    }}, options);             
+                                         },
+                                         onRequest: function(script) {
+                                            if(window.console){console.log(script);}
+                                            new Element('span',{'class': 'loading'}).set('text','Loading...').inject(that);
+                                        }}, options);             
                   flickr.setOptions(options);  
           return this;   
         },
-        get: function (o) {
-             var flickr = this.retrieve('flickr');
+        get: function () {
+             var params = this.retrieve('param'),
+                 flickr = this.retrieve('flickr');
              if(!flickr) {
-                     var flickr = new Request.Flickr(o);
+                     var flickr = new Request.Flickr(params);
                      this.store('flickr',flickr);
              }
           return flickr;
