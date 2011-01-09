@@ -40,13 +40,19 @@ In your JS.
                          tags: 'hackathon'});
       $('badge3').loadFlickrPhotos();   
 
+      //setting up element with setter and getter
+      //for documentation go to: http://mootools.net/blog/2010/06/10/setting-up-elements/
+      $('badge4').set('flickr',{username: 'ydn', amount: 10, size: 'm', tags: 'hackathon'});
+      $('badge4').get('flickr').send();
+
+
 In your HTML.
 
        #HTML
        <div id="badge"></div>
        <div id="badge2"></div>
        <div id="badge3"></div>
-
+       <div id="badge4"></div>
 
 ### Notes:
 
